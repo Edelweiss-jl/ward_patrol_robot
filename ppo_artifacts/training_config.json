@@ -1,0 +1,30 @@
+{
+  "env_version": "ward-local-v2",
+  "algorithm": "SB3 PPO",
+  "seed": 7,
+  "observation_size": 28,
+  "requested_steps": 40000,
+  "warmup_requested": 5000,
+  "device": "cpu",
+  "n_steps": 512,
+  "batch_size": 64,
+  "n_epochs": 6,
+  "learning_rate": 0.0003,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "ent_coef": 0.015,
+  "net_arch": [
+    64,
+    64
+  ],
+  "versions": {
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4",
+    "gymnasium": "1.0.0",
+    "stable_baselines3": "2.4.1"
+  },
+  "static_actual_steps": 5120,
+  "actual_steps": 40448,
+  "training_wall_seconds": 205.91368719999446,
+  "completed": true
+}

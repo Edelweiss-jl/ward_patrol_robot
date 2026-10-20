@@ -1,0 +1,35 @@
+{
+  "env_version": "ward-dual-joint-v1",
+  "algorithm": "SB3 centralized joint PPO",
+  "scenario": "corridor",
+  "people": true,
+  "seed": 17,
+  "observation_size": 52,
+  "action_space": [
+    9,
+    9
+  ],
+  "requested_steps": 16384,
+  "control_dt": 0.2,
+  "max_seconds": 180,
+  "initial_forward_logit_bias": 3.0,
+  "n_steps": 512,
+  "batch_size": 64,
+  "n_epochs": 6,
+  "learning_rate": 0.0001,
+  "ent_coef": 0.005,
+  "gamma": 0.99,
+  "net_arch": [
+    64,
+    64
+  ],
+  "completed": true,
+  "versions": {
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4",
+    "gymnasium": "1.0.0",
+    "stable_baselines3": "2.4.1"
+  },
+  "actual_steps": 16384,
+  "wall_seconds": 780.1206017999793
+}
